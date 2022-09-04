@@ -1,0 +1,30 @@
+:root {
+  --main-bg-clr: #181818;
+  --second-bg-clr: #212121;
+  --third-bg-clr: #313131;
+  --the4th-clr: #111111;
+  --text-clr: #ddd;
+  --prpl-clr:rgb(97, 53, 123);
+}
+.app.light {
+  --main-bg-clr: rgba(255, 255, 255);
+  --second-bg-clr: rgba(250, 250, 250);
+  --third-bg-clr: rgb(235, 235, 235);
+  --the4th-clr: rgb(255, 255, 255);
+  --text-clr: #111;
+  --prpl-clr:rgb(97, 53, 123);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--main-bg-clr);
+  color: var(--text-clr);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}

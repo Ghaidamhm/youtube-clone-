@@ -1,0 +1,48 @@
+.explore {
+  min-height: 100vh;
+}
+.explore > main {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  background: var(--main-bg-clr);
+}
+
+.explore__content {
+  padding: 20px 40px;
+  flex: 1;
+}
+.explore__options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px;
+  color: var(--text-clr);
+}
+
+.explore__line {
+  height: 50px;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+.explore__line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--third-bg-clr);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.explore__videos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.explore__videos > h1 {
+  color: var(--text-clr);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
